@@ -1,0 +1,20 @@
+// workers
+
+.worker {
+  &-name {
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    img {
+      float: left;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-right: 30px;
+    }
+
+    h3 {
+      margin-top: 15px;
+    }
+  }
+}

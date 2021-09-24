@@ -1,0 +1,58 @@
+body {
+  &.photographer {
+    .main-overlay {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ea3d5d+0,fd5868+100&0.9+0,0.9+100 */
+      background: -moz-linear-gradient(top, rgba(234,61,93,0.9) 0%, rgba(253,88,104,0.9) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(234,61,93,0.9) 0%,rgba(253,88,104,0.9) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(234,61,93,0.9) 0%,rgba(253,88,104,0.9) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#e6ea3d5d', endColorstr='#e6fd5868',GradientType=0 );
+      /* IE6-9 */
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media ( min-width: 992px ) {
+        background: -moz-linear-gradient(top, rgba(234,61,93,0.9) 0%, rgba(253,88,104,0.9) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(234,61,93,0.9) 0%,rgba(253,88,104,0.9) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(234,61,93,0.9) 0%,rgba(253,88,104,0.9) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#e6ea3d5d', endColorstr='#e6fd5868',GradientType=0 );
+        /* IE6-9 */
+      }
+    }
+
+    .navigation {
+      $main-menu-color: #65afdd;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #62abd8 !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #60a4ce !important;
+        }
+      }
+    }
+  }
+}

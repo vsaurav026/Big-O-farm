@@ -1,0 +1,56 @@
+.brand-table {
+  width: 100%;
+  float: left;
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+  .cell {
+    position: relative;
+    float: left;
+    text-align: center;
+    height: 136px;
+    border-bottom: 1px rgba(255, 255, 255, .1) solid;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    img {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform((translateY(-50%) translateX(-50%)));
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: #{$tablet - 1px}) {
+  .brand-table {
+    .cell {
+      width: 100%;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .brand-table {
+    .cell {
+      width: 33.3333%;
+      border-right: 1px rgba(255, 255, 255, .1) solid;
+
+      &:nth-child(3n) {
+        border-right: 0;
+      }
+
+      &:nth-last-child(1),
+      &:nth-last-child(2),
+      &:nth-last-child(3) {
+        border-bottom: 0;
+      }
+    }
+  }
+}

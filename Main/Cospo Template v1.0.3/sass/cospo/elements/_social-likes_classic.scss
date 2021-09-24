@@ -1,0 +1,327 @@
+.social-likes {
+  overflow: hidden;
+  margin: 0 -10px;
+}
+
+.social {
+  font-size: 12px;
+  display: block;
+  position: relative;
+  float: left;
+  width: auto;
+  height: 36px;
+  /* background: #36b1ec; */
+  /* line-height: 20px; */
+  letter-spacing: 0.9px;
+  padding-left: 49px !important;
+  padding-right: 20px !important;
+  border-radius: 20px;
+  border: 0;
+  margin: 0 10px;
+  cursor: pointer;
+  /* -webkit-transition: background-color .3s ease, border-color .3s ease;*/
+  /* transition: background-color .3s ease, border-color .3s ease;*/
+  /* border-color: #36b1ec;*/
+
+  &:active:before {
+    /* border: 0;*/
+  }
+
+  &:empty {
+    /* padding-right: 1.5em;*/
+    /* padding-left: 2.5em;*/
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    /* background: #42444a; */
+    -webkit-transition: .2s;
+    transition: .2s;
+    line-height: 32px;
+    font-size: 14px;
+    /* border: 0;*/
+    padding-left: 25px !important;
+    border-color: #36b1ec;
+  }
+
+  &:hover {
+    color: inherit;
+    /* background-color: #36b1ec;*/
+  }
+
+  &:after {
+    background-color: #36b1ec;
+  }
+
+  &.socicon-twitter {
+    &:before {
+      border-color: #36b1ec;
+    }
+    &:after {
+      background-color: #36b1ec;
+    }
+  }
+  &.socicon-facebook {
+    /* border-color: #3b5998;*/
+    &:hover {
+      /* background-color: #3b5998;*/
+    }
+    &:before {
+      border-color: #3b5998;
+    }
+    &:after {
+      background-color: #3b5998;
+    }
+  }
+  &.socicon-googleplus {
+    /* border-color: #dd4b39;*/
+    &:hover {
+      /* background-color: #dd4b39;*/
+    }
+    &:before {
+      border-color: #dd4b39;
+    }
+    &:after {
+      background-color: #dd4b39;
+    }
+  }
+
+}
+
+.social-likes__counter {
+  line-height: 0 !important;
+  position: relative;
+  top: -1px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.social-likes,
+.social-likes__widget {
+	/* border:0;*/
+	/* line-height:20px;*/
+	/* font-size:14px;*/
+}
+
+.social-likes {
+	/* min-height:28px;*/
+	/* margin:(-(3px));*/
+
+	&,
+	&_single-w {
+		/* line-height:20px;*/
+	}
+
+	&__widget {
+		/* margin:3px;*/
+	}
+
+	&__button,
+	&__counter {
+		/* font-family:"Trebuchet MS", "Helvetica Neue", Tahoma, sans-serif;*/
+		/* font-size:14px;*/
+		/* line-height:18px;*/
+		/* border-width:1px;*/
+		/* border-style:solid;*/
+		/* border-radius:3px;*/
+	}
+
+	&__button {
+		/* padding:1px 4px 1px 20px;*/
+		/* font-weight:bold;*/
+		/* text-shadow:0 1px 0 hsla(0,0%,100%,.6);*/
+		/* box-shadow:0 1px 1px hsla(0,0%,0%,.05);*/
+		/* transition:border .1s ease-in-out, color .2s ease-in-out;*/
+	}
+
+	&__icon {
+		/* width:20px;*/
+		/* height:20px;*/
+		/* background-repeat:no-repeat;*/
+	}
+
+	&__counter {
+		/* margin-left:7px;*/
+		/* padding:1px 4px;*/
+		/* font-weight:normal;*/
+		/* color:#666;*/
+		/* color:hsla(0,0%,0%,.5);*/
+		/* cursor:default;*/
+	}
+
+	&__counter:before,
+	&__counter:after {
+		/* content:"";*/
+		/* position:absolute;*/
+		/* width:0;*/
+		/* height:0;*/
+	}
+	&__counter:before {
+		/* top:4px;*/
+		/* left:-6px;*/
+		/* border:6px inset transparent;  // inset fixes strange artefacts in Firefox*/
+		/* border-left:0;*/
+		/* border-right:6px solid;*/
+		/* border-right-color:inherit;*/
+		/* opacity:.7;*/
+		}
+	&__counter:after {
+		/* top:5px;*/
+		/* left:-4px;*/
+		/* border:5px inset transparent;  // inset fixes strange artefacts in Firefox*/
+		/* border-left:0;*/
+		/* border-right:5px solid;*/
+		}
+
+	/* Vertical mode*/
+	&_vertical {
+		/* margin:-6px -4px;*/
+
+		.social-likes__widget {
+			/* margin:6px 4px;*/
+		}
+	}
+
+	/* Icons only mode*/
+	&_notext {
+		.social-likes__widget {
+			/* margin:3px 2px;*/
+		}
+		.social-likes__button {
+			/* width:16px;*/
+		}
+	}
+
+	/* Single button mode*/
+	&_single {
+		/* margin-top:-16px;*/
+		/* padding:6px 6px 4px;*/
+		/* background:#fff;*/
+		/* box-shadow:0 0 10px hsla(0,0%,0%,.25);*/
+	}
+}
+
+/**/
+/* // Single button*/
+/* .social-likes__widget_single {*/
+/* 	margin:0;*/
+/* }*/
+/* .social-likes__button_single {*/
+/* 	padding-left:19px;*/
+/* 	background:#e2e2e2;*/
+/* 	background:linear-gradient(to bottom, #f7f7f7, #e2e2e2);*/
+/* 	color:#444;*/
+/* 	border-color:#ccc;*/
+/* 	border-color:hsla(0,0%,70%,.8);*/
+/* 	border-bottom-color:hsla(0,0%,60%,.8);*/
+/* }*/
+/* .social-likes__button_single:hover,*/
+/* .social-likes__widget_active .social-likes__button_single {*/
+/* 	background:#f4f4f4;*/
+/* 	background:linear-gradient(to bottom, #f0f0f0, #cfcfcf);*/
+/* 	color:#222;*/
+/* 	border-color:#bbb;*/
+/* 	border-bottom-color:#9f9f9f;*/
+/* }*/
+/* .social-likes__icon_single {*/
+/* 	background-image:embedurl('icons/single.png');*/
+/* 	background-position:2px 3px;*/
+/* }*/
+/* .social-likes__counter_single {*/
+/* 	background:#f6f6f6;*/
+/* 	border-color:#ddd;*/
+/* }*/
+/* .social-likes__counter_single:after {*/
+/* 	border-right-color:#f6f6f6;*/
+/* }*/
+/**/
+/* // Facebook*/
+/* .social-likes__button_facebook {*/
+/* 	// padding-left:19px;*/
+/* 	// background:#eceef5;*/
+/* 	// background:linear-gradient(to bottom, #fff, #d8def4);*/
+/* 	// color:#3b5998;*/
+/* 	// border-color:#cad4e7;*/
+/* 	// border-color:hsla(219,38%,85%,.8);*/
+/* 	// border-bottom-color:hsla(219,12%,77%,.8);*/
+/* }*/
+/* .social-likes__button_facebook:hover {*/
+/* 	// background:#c0cdf3;*/
+/* 	// background:linear-gradient(to bottom, #f2f3f7, #c0cdf3);*/
+/* 	// color:#253860;*/
+/* 	// border-color:#b4bfd4;*/
+/* 	// border-bottom-color:#b3b7bf;*/
+/* }*/
+/* .social-likes__icon_facebook {*/
+/* 	// background-image:embedurl('icons/facebook.png');*/
+/* 	// background-position:3px 3px;*/
+/* }*/
+/* .social-likes__counter_facebook {*/
+/* 	// background:#f2f3f7;*/
+/* 	// border-color:#cad4e7;*/
+/* }*/
+/* .social-likes__counter_facebook:after {*/
+/* 	// border-right-color:#f2f3f7;*/
+/* }*/
+/**/
+/**/
+/* // Twitter*/
+/* .social-likes__button_twitter {*/
+/* 	padding-left:19px;*/
+/* 	background:#d5e6ef;*/
+/* 	background:linear-gradient(to bottom, #fff, #d5e6ef);*/
+/* 	color:#186487;*/
+/* 	border-color:#a4cce5;*/
+/* 	border-color:hsla(203,56%,77%,.8);*/
+/* 	border-bottom-color:hsla(203,31%,71%,.8);*/
+/* }*/
+/* .social-likes__button_twitter:hover {*/
+/* 	background:#bfdfed;*/
+/* 	background:linear-gradient(to bottom, #f2f8fc, #bfdfed);*/
+/* 	color:#0b3752;*/
+/* 	border-color:#9cbbcf;*/
+/* 	border-bottom-color:#68a0c4;*/
+/* }*/
+/* .social-likes__icon_twitter {*/
+/* 	background-image:embedurl('icons/twitter.png');*/
+/* 	background-position:3px 5px;*/
+/* }*/
+/* .social-likes__counter_twitter {*/
+/* 	background:#f2f8fc;*/
+/* 	border-color:#a4cce5;*/
+/* }*/
+/* .social-likes__counter_twitter:after {*/
+/* 	border-right-color:#f2f8fc;*/
+/* }*/
+/**/
+/* // Google+*/
+/* .social-likes__button_plusone {*/
+/* 	padding-left:12px;*/
+/* 	background:#e4e4e4;*/
+/* 	background:linear-gradient(to bottom, #f5f5f5, #e4e4e4);*/
+/* 	color:#da573b;*/
+/* 	border-color:#bbb;*/
+/* 	border-color:hsla(0,0%,80%,.8);*/
+/* 	border-bottom-color:hsla(0,0%,70%,.8);*/
+/* }*/
+/* .social-likes__button_plusone:hover {*/
+/* 	background:#f4f4f4;*/
+/* 	background:linear-gradient(to bottom, #f9f9f9, #f0f0f0);*/
+/* 	color:#cd4427;*/
+/* 	border-color:#ddd;*/
+/* 	border-bottom-color:#ccc;*/
+/* }*/
+/* .social-likes__icon_plusone {*/
+/* 	background-image:embedurl('icons/plusone.png');*/
+/* 	background-position:0 6px;*/
+/* }*/
+/* .social-likes__counter_plusone {*/
+/* 	background:#f9f9f9;*/
+/* 	border-color:#d2d2d2;*/
+/* }*/
+/* .social-likes__counter_plusone:after {*/
+/* 	border-right-color:#f9f9f9;*/
+/* }*/

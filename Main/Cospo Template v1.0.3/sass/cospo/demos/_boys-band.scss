@@ -1,0 +1,60 @@
+body {
+  &.boys-band {
+    .main-overlay {
+      background: rgba(1, 0, 22, 0.8);
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media(min-width: 992px) {
+        background: rgba(1, 0, 22, 0.8);
+      }
+    }
+
+    .main-overlay.hide-bg {
+      opacity: 1 !important;
+      background-color: rgba(1, 0, 22, 0.4) !important;
+    }
+
+    .navigation {
+      $main-menu-color: #514c7b;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #4a4574 !important;
+        }
+      }
+
+      .ajax-page-dynamic .ajax-content {
+        background-color: #4a4574;
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #66628b !important;
+        }
+      }
+    }
+
+    section {
+      &#about {
+        .page-figure {
+          &.in-content {
+            background-image: url('../img/boys-band/element-about.jpg');
+            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+              background-image: url('../img/boys-band/element-about@2x.jpg');
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+body {
+  &.personal-girl {
+    .main-overlay {
+      background: rgba(220, 148, 132, 0.9);
+      background: -moz-linear-gradient(270deg, rgba(220, 148, 132, 0.9) 0%, rgba(219, 116, 103, 0.9) 100%);
+      background: -webkit-linear-gradient(270deg, rgba(220, 148, 132, 0.9) 0%, rgba(219, 116, 103, 0.9) 100%);
+      background: -o-linear-gradient(270deg, rgba(220, 148, 132, 0.9) 0%, rgba(219, 116, 103, 0.9) 100%);
+      background: -ms-linear-gradient(270deg, rgba(220, 148, 132, 0.9) 0%, rgba(219, 116, 103, 0.9) 100%);
+      background: linear-gradient(0deg, rgba(220, 148, 132, 0.9) 0%, rgba(219, 116, 103, 0.9) 100%);
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media ( min-width: 992px ) {
+        background: rgba(220, 148, 132, 0.9);
+        background: -moz-linear-gradient(270deg, rgba(220, 148, 132, 0.9) 0%, rgba(219, 116, 103, 0.9) 100%);
+        background: -webkit-linear-gradient(270deg, rgba(220, 148, 132, 0.9) 0%, rgba(219, 116, 103, 0.9) 100%);
+        background: -o-linear-gradient(270deg, rgba(220, 148, 132, 0.9) 0%, rgba(219, 116, 103, 0.9) 100%);
+        background: -ms-linear-gradient(270deg, rgba(220, 148, 132, 0.9) 0%, rgba(219, 116, 103, 0.9) 100%);
+        background: linear-gradient(0deg, rgba(220, 148, 132, 0.9) 0%, rgba(219, 116, 103, 0.9) 100%);
+      }
+    }
+
+    .sign-in-page {
+      background-image: url('../img/login/girl.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .navigation {
+      $main-menu-color: #bf6c81;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: #bf6c81 !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #b8677c !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #ca8395 !important;
+        }
+      }
+
+      .widget-search-overlay {
+        background-color: #ca8395 !important;
+      }
+    }
+
+    .progress-bar {
+      & > span:first-child {
+        background: rgba(221, 109, 98, 1);
+      }
+    }
+  }
+}

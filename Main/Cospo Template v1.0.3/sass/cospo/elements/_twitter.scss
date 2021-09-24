@@ -1,0 +1,133 @@
+body {
+  .cospo-twitter {
+    background-image: url('../img/svg/twitter-dark.svg'); // change for other theme
+    background-size: 19px 16px;
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+
+    ul {
+      padding-left: 35px;
+
+      li {
+        padding-left: 0;
+
+        &:before {
+          content: none;
+        }
+
+        a {
+          /* important because Maks is important king */
+          color: rgba(98, 167, 244, .8) !important; // change for other theme
+          border: none!important;
+
+          &:hover {
+            color: rgba(98, 167, 244, 1) !important; // change for other theme
+            border: none!important;
+          }
+        }
+        /* User */
+        .user {
+          position: relative;
+          margin-bottom: 13px;
+
+          img {
+            display: none;
+            position: absolute;
+            top: 3px;
+            left: -35px;
+            width: 30px;
+            height: auto;
+          }
+
+          span[data-scribe="element:name"] {
+            font-family: 'Dosis';
+            font-size: 1.571rem;
+            line-height: 1;
+            letter-spacing: .14rem;
+            display: block;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.9); // change for other theme
+          }
+
+          span[data-scribe="element:screen_name"] {
+            font-family: 'Dosis';
+            font-size: 1.143rem;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+          }
+        }
+        /* Tweet */
+        .tweet {
+          letter-spacing: .063rem;
+
+          a {
+            font-size: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  .widget-item {
+    .cospo-twitter {
+      background-size: 18px 15px;
+
+      ul {
+        padding-left: 0;
+
+        li {
+          a {
+            color: rgba(255, 255, 255, .5) !important; // change for other theme
+
+            &:hover {
+              color: rgba(255, 255, 255, 1) !important; // change for other theme
+            }
+          }
+
+          .user {
+            padding-left: 35px;
+
+            span[data-scribe="element:name"] {
+              font-family: 'Lato';
+              font-size: .857rem;
+              letter-spacing: .071rem;
+            }
+
+            span[data-scribe="element:screen_name"] {
+              font-family: 'Lato';
+              font-size: 1rem;
+              text-transform: lowercase;
+            }
+          }
+          /* Tweet */
+          .tweet {
+            font-size: 1.143rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.light {
+    .cospo-twitter {
+      background-image: url('../img/svg/twitter.svg'); // change for other theme
+
+      ul {
+        li {
+          .user {
+            span[data-scribe="element:name"] {
+              color: rgba(0,0,0,0.9); // change for other theme
+            }
+          }
+          a {
+            color: rgba(0, 0, 0, .5) !important; // change for other theme
+
+            &:hover {
+              color: rgba(0, 0, 0, 1) !important; // change for other theme
+            }
+          }
+        }
+      }
+    }
+  }
+}

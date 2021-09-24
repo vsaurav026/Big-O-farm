@@ -1,0 +1,119 @@
+/**
+ * Scroll
+ */
+.scroll {
+  .content {
+    height: auto;
+  }
+}
+@media screen and (max-width: $desktop) {
+  .home-page {
+    .wrapper-scroll {
+      height: 100%;
+
+      .scroll {
+        height: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width: $desktop) {
+  .scroll {
+    > .page-figure:not(.in-content) {
+      margin-top: -54px !important;
+
+      figcaption {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .wrapper-scroll {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  // scroll
+  .scroll {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-top: 54px;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .content {
+      padding-bottom: 57px;
+    }
+
+    & > .content-center {
+      padding-bottom: 54px;
+    }
+  }
+
+  .home-page {
+    .scroll {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      > .content-center {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .element-scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    overflow: hidden;
+    z-index: 1;
+
+    &.fade-out {
+      animation: hide-opacity .3s;
+      animation-fill-mode: forwards;
+    }
+
+    .line-scroll {
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      height: inherit;
+      background-color: white;
+      @include transition( (width 0.2s linear) );
+    }
+  }
+
+  .light {
+    .element-scroll {
+      .line-scroll {
+        background-color: rgba(55, 55, 55, 0.9);
+      }
+    }
+  }
+
+  .fixed-scroll {
+    .element-scroll {
+      position: fixed;
+    }
+  }
+
+  .overflow-height {
+    overflow-x: hidden;
+    height: 100%;
+
+    &.half-content {
+      height: 50%;
+    }
+  }
+}

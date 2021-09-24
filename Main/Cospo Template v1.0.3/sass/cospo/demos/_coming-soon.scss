@@ -1,0 +1,41 @@
+body {
+  &.coming-soon {
+    .main-overlay {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4cb765+0,1e9b8e+100&0.9+0,0.9+100 */
+      background: -moz-linear-gradient(top, rgba(76,183,101,0.9) 0%, rgba(30,155,142,0.9) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(76,183,101,0.9) 0%,rgba(30,155,142,0.9) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(76,183,101,0.9) 0%,rgba(30,155,142,0.9) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#e64cb765', endColorstr='#e61e9b8e',GradientType=0 );
+      /* IE6-9 */
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media(min-width: 992px) {
+        background: -moz-linear-gradient(top, rgba(76,183,101,0.9) 0%, rgba(30,155,142,0.9) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(76,183,101,0.9) 0%,rgba(30,155,142,0.9) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(76,183,101,0.9) 0%,rgba(30,155,142,0.9) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#e64cb765', endColorstr='#e61e9b8e',GradientType=0 );
+        /* IE6-9 */
+      }
+    }
+
+    .navigation {
+      &.open {
+        background: -moz-linear-gradient(top, rgba(76,183,101,0.9) 0%, rgba(30,155,142,0.9) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(76,183,101,0.9) 0%,rgba(30,155,142,0.9) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(76,183,101,0.9) 0%,rgba(30,155,142,0.9) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#e64cb765', endColorstr='#e61e9b8e',GradientType=0 );
+        /* IE6-9 */
+      }
+    }
+  }
+}

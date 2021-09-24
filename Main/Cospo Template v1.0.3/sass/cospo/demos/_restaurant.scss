@@ -1,0 +1,89 @@
+body {
+  &.restaurant {
+    .main-overlay {
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media(min-width: 992px) {
+        background: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    .sign-in-page {
+      background-image: url('../img/login/rest.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .navigation {
+      $main-menu-color: #646fa0;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #576397 !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #7e87b0 !important;
+        }
+      }
+    }
+
+    .restaurant-home-icons {
+      position: relative;
+      left: -8px;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        border: 0;
+        margin-right: 13px;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 38px auto;
+        @include transition( (background 0.2s) );
+
+        &.basket {
+          background-image: url('../img/svg/restaurant/basket.svg');
+        }
+
+        &.food {
+          background-image: url('../img/svg/restaurant/food.svg');
+        }
+
+        &.drink {
+          background-image: url('../img/svg/restaurant/drink.svg');
+        }
+
+        &.fruit {
+          background-image: url('../img/svg/restaurant/fruit.svg');
+        }
+
+        &:active,
+        &:hover {
+          background-color: rgba(122, 114, 135, 0.3);
+        }
+      }
+    }
+  }
+}

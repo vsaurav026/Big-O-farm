@@ -1,0 +1,108 @@
+// pricing block
+
+.pricing {
+  display: table;
+  width: 100%;
+  margin-bottom: 39px;
+  margin-top: 39px;
+  padding: 35px 0;
+  table-layout: fixed;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+
+  &-name {
+    p,
+    span {
+      font-family: 'Dosis', sans-serif;
+    }
+  }
+
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+
+    &.pricing-price {
+      p {
+        font-weight: 300;
+
+        span {
+          line-height: 1;
+          margin-top: 8px;
+        }
+      }
+    }
+
+    button,
+    .button,
+    p {
+      margin: 0;
+    }
+
+    p,
+    span {
+      font-size: 28px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1;
+      vertical-align: middle;
+
+      span {
+        font-size: 12px;
+        display: block;
+        text-transform: lowercase;
+      }
+    }
+  }
+
+  svg,
+  img {
+    width: 27px;
+    height: 24px;
+    margin-right: 9px;
+  }
+  img {
+    height: auto;
+  }
+}
+
+body.dark {
+  .pricing {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+@media (max-width: #{$tablet - 1px}) {
+  .pricing {
+    .pricing-name {
+      float: left;
+      text-align: left;
+      width: 50%;
+      padding-top: .4em;
+    }
+
+    .pricing-price {
+      float: right;
+      text-align: right;
+      width: 50%;
+    }
+
+    .pricing-buy {
+      float: left;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .pricing {
+    .pricing-buy {
+      text-align: right;
+    }
+
+    .pricing-price {
+      text-align: center;
+    }
+  }
+}

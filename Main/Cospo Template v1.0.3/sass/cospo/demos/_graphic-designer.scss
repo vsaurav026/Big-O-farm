@@ -1,0 +1,63 @@
+/* GRAPHIC DESIGNER */
+body {
+  &.graphic-designer {
+    .main-overlay {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media(min-width: 992px) {
+        background: rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    .progress-bar {
+      & > span:first-child {
+        background: rgba(0, 0, 0, 1);
+      }
+    }
+
+    .navigation {
+      $main-menu-color: #747474;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #898989 !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #686868 !important;
+        }
+      }
+    }
+
+    .p4-dots {
+      position: relative;
+      margin-bottom: 30px;
+      @media ( min-width: 992px ) {
+        position: absolute;
+        top: -5.5em;
+      }
+    }
+
+    .p4-dots path {
+      fill: #ffffff;
+    }
+  }
+}

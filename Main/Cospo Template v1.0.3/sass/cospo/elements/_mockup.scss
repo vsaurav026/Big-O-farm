@@ -1,0 +1,15 @@
+.mockup {
+  position: absolute;
+  z-index: 0;
+  // artist.html
+  &-artist-book {
+    width: 88%;
+    top: -2px;
+    right: -377px;
+  }
+
+  &-artist-color {
+    bottom: -13%;
+    right: -38%;
+  }
+}

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/*
+Theme Name: Cospo
+Theme URI: http://template.cospo.itembridge.com/
+Author: InfoStyle
+Author URI: http://themeforest.net/user/InfoStyle
+Description: Cospo responsive theme
+Version: 1.0.2
+License: ThemeForest Regular & Extended License
+License URI: http://themeforest.net/licenses/regular-extended
+*/
+/*
+1. Mixins------------------------------(Line )
+2. Basic (Typography)------------------(Line )
+3. Keyframes---------------------------(Line )
+4. Layout Grid-------------------------(Line )
+  4.1 Mobile device--------------------(Line )
+  4.2 Tablet device--------------------(Line )
+  4.3 Desktop device-------------------(Line )
+  4.4 Large device---------------------(Line )
+5.Elements-----------------------------(Line )
+  5.1 Preloader------------------------(Line )
+  5.2 Cospo gallery--------------------(Line )
+  5.3 Accordeon------------------------(Line )
+  5.4 Contacts-------------------------(Line )
+  5.5 Pages----------------------------(Line )
+  5.6 Home page------------------------(Line )
+  5.7 Scroll---------------------------(Line )
+  5.8 Navigation-----------------------(Line )
+  5.9 Slider---------------------------(Line )
+  5.10 Video---------------------------(Line )
+  5.11 Aside menu----------------------(Line )
+  5.12 Projects------------------------(Line )
+  5.13 Overlay-------------------------(Line )
+  5.14 Map-----------------------------(Line )
+  5.15 Pricing-------------------------(Line )
+  5.16 Workers-------------------------(Line )
+  5.17 Brand table---------------------(Line )
+  5.18 Info-block----------------------(Line )
+  5.19 Progress------------------------(Line )
+  5.20 Twitter-------------------------(Line )
+  5.21 Mockup--------------------------(Line )
+  5.22 Full image----------------------(Line )
+  5.23 Widgets-------------------------(Line )
+  5.24 Iphone--------------------------(Line )
+  5.25 Table---------------------------(Line )
+  5.26 Calendar------------------------(Line )
+6. Demos-------------------------------(Line )
+  6.1 Graphic designer-----------------(Line )
+  6.2 Fashion designer-----------------(Line )
+  6.3 Photographer---------------------(Line )
+  6.4 Artist---------------------------(Line )
+  6.5 Personal man---------------------(Line )
+  6.6 Personal girl--------------------(Line )
+  6.7 Singer---------------------------(Line )
+  6.8 Classic performer----------------(Line )
+  6.9 Agency---------------------------(Line )
+  6.10 DJ------------------------------(Line )
+  6.11 Boys Band-----------------------(Line )
+  6.12 Sport shop----------------------(Line )
+  6.13 Restaurant----------------------(Line )
+  6.14 Rental boards-------------------(Line )
+  6.15 Video maker---------------------(Line )
+  6.16 Coming soon---------------------(Line )
+  6.17 App1----------------------------(Line )
+  6.18 App2----------------------------(Line )
+  6.19 App3----------------------------(Line )
+  6.20 Watercolor artist---------------(Line )
+  6.21 Photographer agency-------------(Line )
+  6.22 Law firm------------------------(Line )
+  6.23 Community-----------------------(Line )
+  6.24 Under construction--------------(Line )
+7. Blog--------------------------------(Line )
+ */
+
+/* Mixins
+----------------------------------------------------------------------*/
+@import 'mixins';
+
+/* Basic
+----------------------------------------------------------------------*/
+@import 'cospo/basic';
+
+/* Keyframes
+----------------------------------------------------------------------*/
+@import 'cospo/keyframes';
+
+/* Layout
+----------------------------------------------------------------------*/
+@import 'cospo/layout';
+
+/* Elements
+----------------------------------------------------------------------*/
+@import 'cospo/elements';
+
+/* Demos
+----------------------------------------------------------------------*/
+@import 'cospo/demos';
+
+/* Blog
+----------------------------------------------------------------------*/
+@import 'cospo/blog';

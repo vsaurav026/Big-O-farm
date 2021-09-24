@@ -1,0 +1,11 @@
+.app1 {
+  .main-overlay {
+    background-color: rgba(10, 6, 13, 0.9);
+  }
+
+  .ajax-page-dynamic .ajax-content {
+    @media(min-width: 992px) {
+      background-color: rgba(10, 6, 13, 0.9);
+    }
+  }
+}

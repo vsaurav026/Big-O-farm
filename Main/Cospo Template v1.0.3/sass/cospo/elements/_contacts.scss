@@ -1,0 +1,40 @@
+#contact {
+  h4 {
+    margin-top: 1.7em;
+  }
+}
+
+p {
+  position: relative;
+}
+
+form {
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    margin-bottom: 62px;
+    @media (max-width: #{$desktop - 1px}) {
+      margin-bottom: 32px;
+    }
+  }
+
+  button[type="submit"],
+  input[type="submit"] {
+    -webkit-transition: color .5s ease, background .5s ease;
+    transition: color .5s ease, background .5s ease;
+
+    &.success {
+      color: white;
+      background: green;
+
+      &:hover {
+        background: green !important;
+        color: white !important;
+      }
+    }
+
+    &:before {
+      line-height: 2.7em !important;
+    }
+  }
+}

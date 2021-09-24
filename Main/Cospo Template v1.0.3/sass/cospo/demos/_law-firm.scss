@@ -1,0 +1,108 @@
+body {
+  &.law-firm {
+    .main-overlay {
+      background: rgba(190, 104, 107, 0.95);
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media(min-width: 992px) {
+        background: rgba(190, 104, 107, 0.95);
+      }
+    }
+
+    .navigation {
+      $main-menu-color: #5a5353;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #696161 !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #787575 !important;
+        }
+      }
+    }
+
+    section#about {
+      figcaption.all-place {
+        padding-left: 0;
+
+        &:after {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: -1;
+          background-color: #331f20;
+          opacity: .85;
+        }
+
+        button {
+          float: none;
+          display: inline-block;
+        }
+      }
+
+      .content-center {
+        text-align: center;
+      }
+    }
+  }
+}
+
+body {
+  &.law-firm {
+    .bg-element {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      height: 80%;
+      height: 80vh;
+      width: 36%;
+      background: url('../img/law-firm/element-bg1.png') center right no-repeat;
+      background-size: contain;
+      @include transform((translateY(-50%)));
+      @media ( min-width: 768px ) {
+        display: block;
+      }
+    }
+
+    #about {
+      .page-figure.in-content {
+        background-image: url('../img/law-firm/about/image.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @media (-webkit-min-device-pixel-ratio: 2) {
+          background-image: url('../img/law-firm/about/image@2x.jpg');
+        }
+
+        button {
+          margin: 1.5em 1em;
+        }
+      }
+    }
+  }
+}

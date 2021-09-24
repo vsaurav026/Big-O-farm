@@ -1,0 +1,60 @@
+body {
+  &.photographer-agency {
+    border: 20px #fff solid;
+
+    .main-overlay {
+      background: rgba(123, 104, 112, 0.95) !important;
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media(min-width: 992px) {
+        background: rgba(123, 104, 112, 0.95);
+      }
+    }
+
+    section.home-page {
+      .background-element {
+        position: absolute;
+        top: 50%;
+        @include transform ( translateY(-50%) );
+        right: 0;
+        width: 50%;
+        height: 50%;
+        background-image: url('../img/photographer-agency/photo-element-bg1.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+      }
+    }
+
+    .navigation {
+      $main-menu-color: #b29da6;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #4a4574 !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #66628b !important;
+        }
+      }
+    }
+  }
+}

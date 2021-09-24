@@ -1,0 +1,48 @@
+body {
+  &.agency {
+    .main-overlay {
+      background-color: rgba(39, 40, 58, 0.85);
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media(min-width: 992px) {
+        background-color: rgba(39, 40, 58, 0.85);
+      }
+    }
+
+    .main-overlay.hide-bg {
+      opacity: 1 !important;
+      background-color: rgba(39, 40, 58, 0.8) !important;
+    }
+
+    .navigation {
+      $main-menu-color: #6d789d;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #5f6a8f !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #566184 !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,305 @@
+$button-size: 58px;
+$button-margin: $button-size / 2;
+
+.full-image-wrapper {
+  position: fixed;
+  z-index: 99999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include transition( (opacity .3s ease) );
+  opacity: 0;
+  background-color: $media-overlay-background;
+
+  &.loaded {
+    opacity: 1;
+  }
+
+  .full-image-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    @include transform( (translate(-50%, -50%)) );
+  }
+
+  .full-image-ul {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include transition( (transform .3s ease) );
+    -webkit-transition: -webkit-transform .3s ease;
+
+    li {
+      position: relative;
+      float: left;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+
+      &:before {
+        content: none;
+      }
+
+      img {
+        @include transform( ( perspective(1px) translate3d(0, 0, 0) ) );
+        @include transition( ( opacity 0.3s ease ) );
+        opacity: 0;
+
+        &.image-loaded {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &.onmouse-move {
+    .show-full-btn-left,
+    .show-full-btn-right {
+      opacity: 1;
+
+      &:before {
+        @include transform( (scale(0.95) translateZ(0.0005px)) );
+        @media ( min-width: 992px ) and (-webkit-min-device-pixel-ratio:0) {
+           @include transform( scale(1) );
+        }
+      }
+    }
+
+    .show-full-btn-close {
+      opacity: 1;
+
+      &:before {
+        @include transform( (scale(0.95) translateZ(0.0005px)) );
+        @media ( min-width: 992px ) and (-webkit-min-device-pixel-ratio:0) {
+           @include transform( scale(1) );
+        }
+      }
+    }
+  }
+
+  &.onmouse-over {
+    .show-full-btn-left,
+    .show-full-btn-right {
+      opacity: 1;
+
+      &:before {
+        @include transform( (scale(0.95) translateZ(0.0005px)) );
+        @media ( min-width: 992px ) and (-webkit-min-device-pixel-ratio:0) {
+           @include transform( scale(1) );
+        }
+      }
+    }
+
+    .show-full-btn-close {
+      opacity: 1;
+
+      &:before {
+        @include transform( (scale(0.95) translateZ(0.0005px)) );
+        @media ( min-width: 992px ) and (-webkit-min-device-pixel-ratio:0) {
+           @include transform( scale(1) );
+        }
+      }
+    }
+  }
+
+  .show-full-btn-close,
+  .show-full-btn-left,
+  .show-full-btn-right {
+    position: absolute;
+    z-index: 4;
+    width: $button-size;
+    height: $button-size;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: box-shadow .3s ease, opacity .3s ease, -webkit-transform .3s ease;
+    @include transition( (box-shadow .3s ease, opacity .3s ease, transform .3s ease) );
+    opacity: 0;
+    border-radius: 50%;
+    background-color: transparent !important;
+
+    &:hover,
+    &:hover:after {
+      // background-color: #fff !important;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-repeat: no-repeat !important;
+      background-position: center center !important;
+      border: 1px solid transparent !important;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,1);
+      z-index: -1;
+      /* for tablet mobile */
+      @include transform( (perspective(1px) scale(1) translateZ(0.0005px)) );
+      -webkit-transition: box-shadow .3s ease, -webkit-transform .3s ease;
+      @include transition( (box-shadow .3s ease, transform .3s ease) );
+      /* device size > 991 */
+      @media ( min-width: 992px ) {
+         @include transform( (scale(0.8) translateZ(0.0005px)) );
+      }
+      @media ( min-width: 992px ) and (-webkit-min-device-pixel-ratio:0) {
+         @include transform( scale(0.8) );
+      }
+    }
+    // @media all and (not handheld) {
+    @media ( min-width: 992px ) {
+      &:hover {
+        &:before {
+          // box-shadow: 0 0 20px 3px rgba(0, 0, 0, .4);
+          // @include transform( ( perspective(1px) scale(1) translateZ(0.0005px) ) );
+        }
+      }
+    }
+    // }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 10;
+      @include transform ((translate3d(0,0,0)));
+      background-color: transparent;
+    }
+
+    &:active {
+      color: rgba(255,255,255,.5);
+      border: 0 !important;
+      background-color: rgba(255,255,255,1) !important;
+
+      &:before {
+        border: 0 !important;
+      }
+    }
+
+    &.hide-btn {
+      opacity: 0;
+    }
+  }
+
+  .show-full-btn-left {
+    top: 50%;
+    left: -$button-margin;
+    @include transform((translateY(-50%) rotate(180deg)));
+    &:before {
+      background-size: 11px 20px;
+    }
+  }
+
+  .show-full-btn-right {
+    top: 50%;
+    right: -$button-margin;
+    @include transform((translateY(-50%)));
+    &:before {
+      background-size: 11px 20px;
+    }
+  }
+
+  .show-full-btn-close {
+    top: -$button-margin;
+    right: -$button-margin;
+    &:before {
+      background-position: center center;
+      background-size: 17px 19px;
+    }
+  }
+  // overlay
+  .left-overlay,
+  .right-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    @include transition( (background-color .3s ease) );
+    background-color: rgba(0,0,0,.6);
+
+    &.hide-overlay {
+      background-color: rgba(0,0,0,0);
+    }
+  }
+
+  .left-overlay {
+    left: -20%;
+  }
+
+  .right-overlay {
+    right: -20%;
+  }
+}
+
+body {
+  .show-full-btn-left,
+  .show-full-btn-right {
+    &:before {
+      background-image: url('../img/ico/dark/next.svg') !important;
+    }
+  }
+
+  .show-full-btn-close {
+    &:before {
+      background-image: url('../img/ico/dark/close.svg') !important;
+    }
+  }
+}
+
+.show-full {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    content: '';
+    @include transition( (opacity .3s ease) );
+    opacity: 0;
+    background-image: url('../img/svg/big-photo.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100% 100%;
+    background-size: contain;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+.light {
+  .show-full {
+    &:after {
+      background-image: url('../img/svg/big-photo-dark.svg');
+    }
+  }
+}

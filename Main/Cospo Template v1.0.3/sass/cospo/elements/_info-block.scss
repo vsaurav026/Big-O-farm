@@ -1,0 +1,22 @@
+.info {
+  &-block {
+    overflow: hidden;
+    display: table;
+
+    &-image {
+      display: table-cell;
+
+      img,
+      svg {
+        width: 33px;
+        margin-right: 16px;
+        position: relative;
+        top: 8px;
+      }
+    }
+
+    &-text {
+      display: table-cell;
+    }
+  }
+}

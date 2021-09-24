@@ -1,0 +1,33 @@
+/* Main Overlay */
+.main-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  @include transition( (transform .3s cubic-bezier(.76,.01,.29,.99), -webkit-transform .3s cubic-bezier(.76,.01,.29,.99), opacity .3s cubic-bezier(.76,.01,.29,.99), background 0.75s) );
+
+  &.hide-bg {
+    opacity: 0;
+  }
+}
+
+.blur {
+  overflow: hidden;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius= '10');
+
+  &:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(255, 255, 255, .2);
+  }
+}

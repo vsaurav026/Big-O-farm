@@ -1,0 +1,79 @@
+body {
+  &.personal-man {
+    .main-overlay {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f4c6b+0,606c88+100 */
+      background: rgba(63,76,107,0.9);
+      /* Old browsers */
+      background: -moz-linear-gradient(top, rgba(63,76,107,0.9) 0%, rgba(96,108,136,0.9) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(63,76,107,0.9) 0%,rgba(96,108,136,0.9) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(63,76,107,0.9) 0%,rgba(96,108,136,0.9) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter:progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#3f4c6b', endColorstr='#606c88',GradientType=0 );
+      /* IE6-9 */
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media ( min-width: 992px ) {
+        background: rgba(63,76,107,0.9);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(63,76,107,0.9) 0%, rgba(96,108,136,0.9) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(63,76,107,0.9) 0%,rgba(96,108,136,0.9) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(63,76,107,0.9) 0%,rgba(96,108,136,0.9) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter:progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#3f4c6b', endColorstr='#606c88',GradientType=0 );
+        /* IE6-9 */
+      }
+    }
+
+    .sign-in-page {
+      background-image: url('../img/login/man.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .navigation {
+      $main-menu-color: #5290bc;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #5496c5 !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #4a85ae !important;
+        }
+      }
+
+      .widget-search {
+        &-overlay {
+          background-color: $main-menu-color !important;
+        }
+      }
+    }
+
+    .progress-bar {
+      & > span:first-child {
+        background: rgba(106, 121, 154, 1);
+      }
+    }
+  }
+}

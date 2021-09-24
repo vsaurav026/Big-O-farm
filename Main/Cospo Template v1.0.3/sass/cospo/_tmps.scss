@@ -1,0 +1,35 @@
+.page1 {
+  background: url('http://feelgrafix.com/data/wallpapers/wallpapers-4.jpg') top center no-repeat;
+  // background-color: darkgreen;
+  background-size: cover;
+}
+
+.page2 {
+  background: url('http://intrawallpaper.com/wp-content/uploads/2022725-wallpaper_625864.jpg') top center no-repeat;
+  // background-color: darkblue;
+  background-size: cover;
+}
+
+.page3 {
+  background: url('http://images5.alphacoders.com/324/324310.jpg') top center no-repeat;
+  // background-color: darkgrey;
+  background-size: cover;
+}
+
+.page4 {
+  background: url('http://s1.picswalls.com/wallpapers/2014/06/18/gothic-photo_053938916_42.jpg') top center no-repeat;
+  // background-color: darkred;
+  background-size: cover;
+}
+
+.page5 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#257c24+0,02eff7+100&1+0,0.91+100 */
+  background: -moz-linear-gradient(45deg, rgba(37,124,36,1) 0%, rgba(2,239,247,0.91) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(37,124,36,1) 0%,rgba(2,239,247,0.91) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(37,124,36,1) 0%,rgba(2,239,247,0.91) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter:progid:DXImageTransform.Microsoft.gradient( startColorstr= '#257c24', endColorstr='#e802eff7',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}

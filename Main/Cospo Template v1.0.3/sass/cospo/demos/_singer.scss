@@ -1,0 +1,78 @@
+body {
+  &.singer {
+    .main-overlay {
+      background-color: rgba(44, 208, 199, 0.9);
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media(min-width: 992px) {
+        background-color: rgba(44, 208, 199, 0.9);
+      }
+    }
+
+    .sign-in-page {
+      background-image: url('../img/login/singer.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .navigation {
+      $main-menu-color: #ae6dcd;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #a464c2 !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #9859b5 !important;
+        }
+      }
+
+      .widget-search-overlay {
+        background-color: #9859b5 !important;
+      }
+    }
+
+    section {
+      &#about {
+        .page-figure {
+          &.in-content {
+            background-size: contain;
+            background-position: 10% 0;
+            background-image: url('../img/singer/man-element1.png');
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+.no-padding {
+  padding: 0 !important;
+
+  &-left {
+    padding-left: 0 !important;
+  }
+
+  &-rigth {
+    padding-right: 0 !important;
+  }
+}

@@ -1,0 +1,72 @@
+body {
+  &.classic-performer {
+    .main-overlay {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .main-overlay.hide-bg {
+      opacity: 1 !important;
+      background-color: rgba(49, 49, 49, 0.8) !important;
+    }
+
+    .navigation {
+      $main-menu-color: #606060;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #6c6c6c !important;
+        }
+      }
+
+      .ajax-page-dynamic .ajax-content {
+        @media(min-width: 992px) {
+          background-color: #6c6c6c;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #565656 !important;
+        }
+      }
+    }
+
+    #about {
+      .page-figure.in-content {
+        background-image: url('../img/classic-performer/piano-element-1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media (-webkit-min-device-pixel-ratio: 2) {
+          background-image: url('../img/classic-performer/piano-element-1@2x.jpg');
+        }
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  span {
+    @extend p;
+    text-transform: none;
+    display: block;
+  }
+}

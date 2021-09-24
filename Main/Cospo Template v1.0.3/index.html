@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Cospo Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="promo/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="promo/css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+     -->
+
+
+
+    <!-- Style -->
+    <style>
+
+
+ /* Style the video: 100% width and height to cover the entire window */
+ #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+} 
+    .dropbtn {
+      background-color:;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:#343440;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .grid-item{
+
+      width: 100%;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    /* Show the dropdown menu on hover */
+    /* .dropdown:hover .dropdown-content {display: block;} */
+    .dropdown12:hover .dropdown-content {display: block;}
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body class="dark">
+   
+    <div class="main-preloader">
+      <div class="ball-scale">
+        <div></div>
+      </div>
+    </div>
+
+    <div class="into-page">
+
+      <div class="into-cospo-gallery">
+        <div class="item">
+          <div class="item-bg" data-src="promo/img/into-gallery/1.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/2.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/3.jpg"></div>
+        </div>
+        <div class="item">
+          <div class="item-bg" data-src="promo/img/into-gallery/4.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/5.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/6.jpg"></div>
+        </div>
+        <div class="item">
+          <div class="item-bg" data-src="promo/img/into-gallery/7.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/8.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/9.jpg"></div>
+        </div>
+        <div class="item">
+          <div class="item-bg" data-src="promo/img/into-gallery/10.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/11.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/12.jpg"></div>
+        </div>
+        <div class="item">
+          <div class="item-bg" data-src="promo/img/into-gallery/13.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/14.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/15.jpg"></div>
+        </div>
+        <div class="item">
+          <div class="item-bg" data-src="promo/img/into-gallery/16.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/17.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/18.jpg"></div>
+        </div>
+        <div class="item">
+          <div class="item-bg" data-src="promo/img/into-gallery/19.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/20.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/21.jpg"></div>
+        </div>
+        <div class="item">
+          <div class="item-bg" data-src="promo/img/into-gallery/22.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/23.jpg"></div>
+          <div class="item-bg" data-src="promo/img/into-gallery/24.jpg"></div>
+        </div>
+      </div>
+
+      <div class="into-page-content">
+        <div class="into-page-logo logo">
+          <a class="logo-link" href="http://template.cospo.itembridge.com/">
+            <img src="promo/logo.svg" alt="" width="110" height="22">
+          </a>
+        </div>
+
+        <img class="into-page-img" src="promo/24.svg" alt="">
+
+        <a class="into-page-button" href="#top"></a>
+
+        <div class="into-page-overlay"></div>
+      </div>
+
+    </div>
+
+    <main>
+
+      <header id="top">
+        <!-- <div class="container"> -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 logo">
+            <!-- <img src="img/svg/logo.svg" alt="" /> -->
+            <a class="logo-link" href="http://template.cospo.itembridge.com/">
+              <img src="promo/logo.svg" alt="" width="110" height="22">
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 buy">
+            <a class="button" href="http://themeforest.net/item/cospo-creative-multipurpose-html-template/15710757" style="width: 376px;
+            height: 49px;
+            "><div class="input-group" style="width: auto; height: auto;">
+              <div class="form-outline">
+                <input id="search-input" type="search" id="form1" class="form-control" />
+                <label class="form-label" for="form1">Search</label>
+              </div>
+              <button id="search-button" type="button" class="btn btn-primary">
+                <i class="fas fa-search">Search</i>
+              </button>
+            </div></a>
+          </div>
+        </div>
+        <!-- </div> -->
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="filter-button-group">
+            <a data-filter="*"><button class="dropbtn">ALL</button></a>
+            <!-- DropDown  -->
+            <!-- <a data-filter=".business">Locations</a> -->
+            <div class="dropdown dropdown12">
+              <button class="dropbtn">Location</button>
+              <div class="dropdown-content" style="z-index: 10;">
+                <a href="#"><button>Location 1</button></a>
+                <a href="#"><button>Location 2</button></a>
+                <a href="#"><button>Location 3</button></a>
+              </div>
+              </div>
+
+            
+            <!-- DropDown  -->
+
+            <!-- <a data-filter=".portfolio">Business</a> -->
+            <div class="dropdown dropdown12">
+              <button class="dropbtn">Business</button>
+              <div class="dropdown-content" style="z-index: 10;">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+
+            <a data-filter=".personal"><button class="dropbtn">Blog</button></a>
+            <a data-filter=".app"><button class="dropbtn">Involve with us</button></a>
+          </div>
+        </div>
+
+
+
+         <!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="promo/Wildlife Animals 4K 60FPS (ULTRA HD).mp4" type="video/mp4">
+</video>
+
+
+
+
+        <!-- slide show -->
+
+        
+
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/hotel.jpeg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Hotel</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div>
+    </div>
+          <div class="item"><div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/Art.jpeg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Art</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div>
+    </div>
+          <div class="item"><div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/Art.jpeg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Arcade</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div>
+    </div>
+          <div class="item"><div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/1.jpg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Business</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div>
+    </div>
+          <div class="item"><div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/1.jpg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Business</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div></div>
+          <div class="item"><div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/1.jpg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Business</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div></div>
+          <div class="item"><div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/1.jpg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Business</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div></div>
+          <div class="item"><div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/1.jpg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Business</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div></div>
+          <div class="item"><div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/1.jpg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Business</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div></div>
+          <div class="item"><div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/1.jpg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Business</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div></div>
+          <div class="item"><div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/1.jpg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Business</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div></div>
+          <div class="item"><div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+            <a href="agency.html" target="_blank">
+              <img src="promo/img/1.jpg" alt=""/>
+              <div class="grid-item-hover">
+                <span class="grid-item-hover-icon"></span>
+                <span class="grid-item-hover-bottom">Business</span>
+                <span class="grid-item-hover-bg agency"></span>
+              </div>
+            </a>
+          </div></div>
+      </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+
+
+      <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+      </script>  
+    
+
+
+
+        
+
+
+
+
+
+
+
+        <!-- slide show end -->
+
+      
+
+            <!-- <div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+              <a href="law-firm.html" target="_blank">
+                <img src="promo/img/13.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">Business</span>
+                  <span class="grid-item-hover-bg law"></span>
+                </div>
+              </a>
+            </div> -->
+
+            <!-- <div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+              <a href="sport-shop.html" target="_blank">
+                <img src="promo/img/24.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">business</span>
+                  <span class="grid-item-hover-bg sport"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item personal col-md-3 col-sm-6 col-xs-12">
+              <a href="classic-performer.html" target="_blank">
+                <img src="promo/img/10.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">personal</span>
+                  <span class="grid-item-hover-bg cp"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+              <a href="rental-boards.html" target="_blank">
+                <img src="promo/img/18.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">business</span>
+                  <span class="grid-item-hover-bg rentalboard"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item app col-md-3 col-sm-6 col-xs-12">
+              <a href="app1.html" target="_blank">
+                <img src="promo/img/2.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">app</span>
+                  <span class="grid-item-hover-bg app1"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item app col-md-3 col-sm-6 col-xs-12">
+              <a href="app2.html" target="_blank">
+                <img src="promo/img/3.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">app</span>
+                  <span class="grid-item-hover-bg app2"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item app col-md-3 col-sm-6 col-xs-12">
+              <a href="app3.html" target="_blank">
+                <img src="promo/img/4.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">app</span>
+                  <span class="grid-item-hover-bg app3"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item personal col-md-3 col-sm-6 col-xs-12">
+              <a href="personal-man.html" target="_blank">
+                <img src="promo/img/15.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">personal</span>
+                  <span class="grid-item-hover-bg personalman"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item personal col-md-3 col-sm-6 col-xs-12">
+              <a href="personal-girl.html" target="_blank">
+                <img src="promo/img/14.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">personal</span>
+                  <span class="grid-item-hover-bg personalgirl"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+              <a href="restaurant.html" target="_blank">
+                <img src="promo/img/19.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">business</span>
+                  <span class="grid-item-hover-bg rest"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item personal col-md-3 col-sm-6 col-xs-12">
+              <a href="singer.html" target="_blank">
+                <img src="promo/img/20.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">personal</span>
+                  <span class="grid-item-hover-bg singer"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item business portfolio col-md-3 col-sm-6 col-xs-12">
+              <a href="video-maker.html" target="_blank">
+                <img src="promo/img/22.jpg" alt=""/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">business portfolio</span>
+                  <span class="grid-item-hover-bg videomaker"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item portfolio col-md-3 col-sm-6 col-xs-12">
+              <a href="artist.html" target="_blank">
+                <img src="promo/img/5.jpg"/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">portfolio</span>
+                  <span class="grid-item-hover-bg artist"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item personal col-md-3 col-sm-6 col-xs-12">
+              <a href="coming-soon.html" target="_blank">
+                <img src="promo/img/8.jpg"/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">personal</span>
+                  <span class="grid-item-hover-bg comingsoon"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item business col-md-3 col-sm-6 col-xs-12">
+              <a href="community.html" target="_blank">
+                <img src="promo/img/9.jpg"/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">business</span>
+                  <span class="grid-item-hover-bg community"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item business portfolio col-md-3 col-sm-6 col-xs-12">
+              <a href="graphic-designer.html" target="_blank">
+                <img src="promo/img/12.jpg"/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">business portfolio</span>
+                  <span class="grid-item-hover-bg gd"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item business portfolio col-md-3 col-sm-6 col-xs-12">
+              <a href="photographer.html" target="_blank">
+                <img src="promo/img/17.jpg"/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">business portfolio</span>
+                  <span class="grid-item-hover-bg photographer"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item portfolio col-md-3 col-sm-6 col-xs-12">
+              <a href="watercolor-artist.html" target="_blank">
+                <img src="promo/img/6.jpg"/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">portfolio</span>
+                  <span class="grid-item-hover-bg artistwater"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item portfolio col-md-3 col-sm-6 col-xs-12">
+              <a href="fashion-designer.html" target="_blank">
+                <img src="promo/img/11.jpg"/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">portfolio</span>
+                  <span class="grid-item-hover-bg fd"></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item personal col-md-3 col-sm-6 col-xs-12">
+              <a href="underconstruction.html" target="_blank">
+                <img src="promo/img/21.jpg"/>
+                <div class="grid-item-hover">
+                  <span class="grid-item-hover-icon"></span>
+                  <span class="grid-item-hover-bottom">personal</span>
+                  <span class="grid-item-hover-bg under"></span>
+                </div>
+              </a>
+            </div> -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>
+    <script src="promo/js/classList.min.js"></script>
+    <script src="js/intoGallery.js"></script>
+    <script src="promo/js/main.js"></script>
+
+  </body>
+
+</html>

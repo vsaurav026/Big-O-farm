@@ -1,0 +1,43 @@
+body {
+  &.watercolor-artist {
+    .main-overlay {
+      background: rgba(214, 240, 253, 0.9) !important;
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media ( min-width: 992px ) {
+        background: rgba(214, 240, 253, 0.9) !important;
+      }
+    }
+
+    .navigation {
+      $main-menu-color: #49b7a1;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #42ab96 !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #4ebba5 !important;
+        }
+      }
+    }
+  }
+}

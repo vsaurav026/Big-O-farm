@@ -1,0 +1,28 @@
+.display {
+  &-table {
+    display: table;
+    table-layout: fixed;
+
+    &.row {
+      @media ( max-width: 768px ) {
+        display: block;
+      }
+    }
+
+    &-cell {
+      display: table-cell;
+      float: none;
+      margin-bottom: 30px;
+      vertical-align: middle;
+      @media ( min-width: 768px ) {
+        width: 50%;
+      }
+
+      &[class*='col-'] {
+        @media ( max-width: 768px ) {
+          display: block;
+        }
+      }
+    }
+  }
+}

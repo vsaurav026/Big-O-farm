@@ -1,0 +1,94 @@
+body {
+  &.rental-boards {
+    .main-overlay {
+      background-color: rgba(210, 241, 246, .95);
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media(min-width: 992px) {
+        background-color: rgba(210, 241, 246, .95);
+      }
+    }
+
+    section.home-page {
+      .background-element {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60%;
+        height: 80%;
+        background-image: url('../img/rental-boards/board.svg');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: contain;
+      }
+    }
+
+    section#about {
+      figcaption.all-place {
+        padding-left: 15%;
+        padding-right: 15%;
+
+        &:after {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: -1;
+          background: rgba(0, 0, 0, 0.75);
+        }
+      }
+
+      .large-block {
+        float: left;
+        margin-top: 2em;
+        margin-bottom: 2.5em;
+      }
+    }
+
+    .navigation {
+      $main-menu-color: #8bc2d6;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #f6f6f6 !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #ededed !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  body {
+    &.rental-boards {
+      .home-page {
+        .content {
+          margin-left: -47px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+/* Element Projects */
+.projects {
+  &-count {
+    display: block;
+    font-size: 56px;
+    font-weight: lighter;
+    line-height: 1;
+    letter-spacing: 2.8px;
+    margin: 27px 0;
+    text-align: center;
+    @media ( min-width: 768px ) {
+      margin: 40px 0;
+      float: left;
+    }
+
+    > span {
+      display: block;
+      line-height: 1;
+      font-size: 19px;
+      letter-spacing: .8px;
+      margin-top: 5px;
+      padding-top: 7px;
+
+      &.line-top {
+        border-top: 1px solid #fff;
+      }
+    }
+  }
+
+  &-info {
+    display: table;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    overflow: hidden;
+    padding: 24px 0;
+    margin: 34px 0;
+    @media ( min-width: 768px ) {
+      margin: 40px 0;
+    }
+    @media ( max-width: 767px ) {
+      text-align: center;
+    }
+
+    &-item {
+      display: table-cell;
+      vertical-align: top;
+
+      &-p {
+        margin-bottom: 20px;
+      }
+    }
+
+    img {
+      display: block;
+      max-width: 160px;
+      height: auto;
+      margin: 0 auto 24px;
+      @media ( min-width: 768px ) {
+        float: left;
+        margin: 0 20px 0 0;
+      }
+    }
+
+    h4 {
+      position: relative;
+      top: -2px;
+      margin: 0;
+      line-height: 1;
+      margin-bottom: 7px;
+      font-size: 2rem !important;
+    }
+
+    > span {
+      display: block;
+      font-size: 16px;
+      letter-spacing: .6px;
+      margin-bottom: 25px;
+      @media ( min-width: 768px ) {
+        margin-bottom: 42px;
+      }
+    }
+
+    .icon-status {
+      display: inline-block;
+      text-align: center;
+      margin-right: 29px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+        fill: rgba(255,255,255,1);
+        margin-bottom: 16px;
+        @media ( min-width: 768px ) {
+          margin-bottom: 15px;
+        }
+      }
+
+      span {
+        display: block;
+        font-size: 16px;
+        letter-spacing: .6px;
+        line-height: 1;
+      }
+    }
+  }
+
+  &-status {
+    display: block;
+    text-align: center;
+    margin: 0 0 27px;
+    @media ( min-width: 768px ) {
+      margin: 0 13.65% 40px 0;
+      float: left;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .projects-count {
+      font-size: 49px;
+      letter-spacing: 2.2px;
+      margin: 0;
+
+      span {
+        margin-top: 11px;
+        padding: 16px 0 0;
+        font-size: 16px;
+        letter-spacing: 1.4px;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 47px;
+          margin-left: -26.5px;
+          height: 1px;
+          background-color: rgba(255,255,255,1);
+        }
+      }
+    }
+  }
+}

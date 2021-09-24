@@ -1,0 +1,95 @@
+body {
+  &.dj {
+    .main-overlay {
+      background: rgb(90, 200, 250);
+      background: -moz-linear-gradient(270deg, rgb(90, 200, 250) 50%, rgb(81, 241, 252) 100%);
+      background: -webkit-linear-gradient(270deg, rgb(90, 200, 250) 50%, rgb(81, 241, 252) 100%);
+      background: -o-linear-gradient(270deg, rgb(90, 200, 250) 50%, rgb(81, 241, 252) 100%);
+      background: -ms-linear-gradient(270deg, rgb(90, 200, 250) 50%, rgb(81, 241, 252) 100%);
+      background: linear-gradient(0deg, rgb(90, 200, 250) 50%, rgb(81, 241, 252) 100%);
+      opacity: .85;
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media(min-width: 992px) {
+        background: rgba(90, 200, 250, .85);
+      }
+    }
+
+    .navigation {
+      $main-menu-color: #bf82d0;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #bc79cf !important;
+        }
+      }
+
+      .ajax-page-dynamic .ajax-content {
+        background-color: #bc79cf;
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #cb86df !important;
+        }
+      }
+    }
+
+    #album {
+      .page-figure {
+        &:before {
+          background: rgba(0,32,34, 0.5);
+        }
+      }
+    }
+
+    .page-figure {
+      &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 92, 122, 0.2);
+      }
+    }
+
+    .progress-bar {
+      & > span:first-child {
+        background: rgba(61, 198, 219, 1);
+      }
+    }
+  }
+}
+@media ( min-width: $desktop ) {
+  body {
+    &.dj {
+      .man {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 90%;
+        background: url('../img/dj/man.png') bottom right no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

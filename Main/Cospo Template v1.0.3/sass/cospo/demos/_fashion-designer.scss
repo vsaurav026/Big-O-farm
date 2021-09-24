@@ -1,0 +1,48 @@
+body {
+  &.fasion-designer {
+    .main-overlay {
+      background-color: rgba(78, 171, 137, 0.9);
+    }
+
+    .ajax-page-dynamic .ajax-content {
+      @media(min-width: 992px) {
+        background-color: rgba(78, 171, 137, 0.9);
+      }
+    }
+
+    // twitter link color
+    .cospo-twitter ul li a {
+        color: #4cffc1 !important;
+    }
+
+    .navigation {
+      $main-menu-color: #58c7a6;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #4ebd9c !important;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #48af90 !important;
+        }
+      }
+    }
+  }
+}

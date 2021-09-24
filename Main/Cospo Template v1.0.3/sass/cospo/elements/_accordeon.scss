@@ -1,0 +1,112 @@
+/**
+ * Cospo Acordeon
+ */
+$size: 25px;
+$color-black: rgba(0, 0, 0, 1);
+$color-white: rgba(255, 255, 255, 1);
+$color-white--hover: rgba(255, 255, 255, .3);
+
+.accordeon {
+  > article {
+    position: relative;
+    margin-bottom: 31px;
+
+    h4 {
+      padding-right: 25px;
+      line-height: 1;
+      margin: 0;
+    }
+  }
+
+  figure {
+    position: relative;
+    top: 9px;
+    width: 100%;
+
+    @media(min-width: 768px) {
+      width: 30%;
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: $size;
+    height: $size;
+    padding: 0;
+    margin: 0;
+    border-radius: $size;
+    border: 0 !important;
+
+    svg {
+      position: absolute;
+      top: 8px;
+      left: 7px;
+      pointer-events: none;
+      @include transition((transform .3s ease, -webkit-transform .3s ease, top .3s ease));
+      fill: $color-black;
+    }
+
+    &:before {
+      border: 0 !important;
+    }
+    &:after {
+      content: none !important;
+    }
+  }
+
+  .open + {
+    button {
+      background: $color-white--hover;
+
+      svg {
+        top: 7px;
+        @include transform(rotate(-180deg));
+        fill: $color-white;
+      }
+    }
+  }
+}
+
+body.dark {
+  .accordeon {
+    button {
+      background: $color-white--hover;
+
+      &:hover {
+        background: $color-white--hover;
+      }
+
+      svg {
+        fill: $color-white;
+      }
+    }
+
+    .open + {
+      button {
+        background: $color-white;
+
+        &:hover {
+          background: $color-white;
+        }
+
+        svg {
+          fill: $color-black;
+        }
+      }
+    }
+  }
+}
+
+.accordeon-item {
+  overflow: hidden;
+  height: 0;
+  @include transition((height .5s ease));
+}
+
+.accordeon-content {
+  overflow: hidden;
+  margin-top: 17px;
+  padding-top: 14px;
+}

@@ -1,0 +1,41 @@
+@mixin absolute-zero {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+$media-overlay-background: rgba(0, 0, 0, .9);
+$tablet: 768px;
+$desktop: 992px;
+$nav_button_size: 86px;
+$input_radio_size: 22px;
+$white: #fff;
+$black: #000;
+$main-text-color-light: rgba(55, 55, 55, .9);
+/* Main color of text for Light skin */
+$add-text-color-light: rgba(55, 55, 55, .9);
+/* Additional color of text for Light skin */
+$main-text-color-dark: rgba(255, 255, 255, .9);
+/* Main color of text for Dark skin */
+$add-text-color-dark: #fff;
+/* Additional color of text for Dark skin */
+$light-link-color: #565656;
+$light-link-hover-color: #7dbbeb;
+$light-link-visited-color: #a9a9a9;
+$dark-link-color: #cacaca;
+$dark-link-hover-color: #7dbbeb;
+$dark-link-visited-color: #7b7b7b;
+$background-body-dark: #373737;
+$background-body-light: #fff;

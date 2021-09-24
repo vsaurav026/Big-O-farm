@@ -1,0 +1,49 @@
+body {
+  &.artist {
+    .main-overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .navigation {
+      $main-menu-color: #eea0c8;
+
+      button.navigation-btn[data-action="go-next-page"] {
+        svg {
+          path {
+            fill: $main-menu-color;
+          }
+        }
+      }
+
+      &.open,
+      .scales {
+        background-color: $main-menu-color !important;
+      }
+
+      .widget-overlay {
+        &-bottom,
+        &-top {
+          background-color: #47b86e !important;
+        }
+      }
+
+      .ajax-page-dynamic .ajax-content {
+        @media(min-width: 992px) {
+          background-color: #47b86e;
+        }
+      }
+
+      .widget-lang {
+        &-overlay {
+          background-color: #47b86e !important;
+        }
+      }
+    }
+
+    @media ( min-width: 992px ) {
+      .ajax-menu-overlay {
+        background-color: rgba(187, 187, 187,0.2);
+      }
+    }
+  }
+}

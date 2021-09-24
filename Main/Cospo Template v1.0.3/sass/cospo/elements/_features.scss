@@ -1,0 +1,11 @@
+.display {
+  &-table {
+    display: table;
+
+    &-cell {
+      display: table-cell;
+      float: none;
+      vertical-align: middle;
+    }
+  }
+}
